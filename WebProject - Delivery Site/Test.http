@@ -1,0 +1,38 @@
+### GET request to example server
+GET https://examples.http-client.intellij.net/get
+    ?generated-in=WebStorm
+
+### POST request users
+ POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "email": "admin@fastdeliver",
+  "password": "admin123"
+}
+
+### GET status packages
+GET http://localhost:3000/status/?id=2384676
+Content-Type: application/json
+
+
+
+
+
+### POST request packages
+ POST http://localhost:3000/packages
+Content-Type: application/json
+
+{
+
+
+
+}
+
+
+
+
+
+###  GET request to example server
+GET http://localhost:3000/test
+   ?generated-in=WebStorm

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suivi du colis - FastDeliver</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="style/tracking.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="./style/footer.css">
+    <script src="./scripts/tracking.js" defer></script>
+    <script src="./scripts/header.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <h1><a href="./index.html">FastDeliver</a></h1>
+                <p class="hidden">Administration</p>
+            </div>
+            <ul>
+                <li id="RoleNameHeader" class="hidden" >Admin: <span class="NameFNameHeader">Nom Prénom</span> </li>
+                <li><a href="./login.html" id="connect" >Connexion</a></li>
+                <li><a href="./login.html" id="disconnect" class="hidden">Déconnexion</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="tracking-div">
+            <div class="tracking-head">
+                <h2>Suivi du Colis</h2>
+                <div class="tracking-header-infos">
+                    <h3 id="package-number"></h3>
+                    <p id="package-status"></p>
+                </div>
+            </div>
+            <div class="tracking-body">
+                <div class="tracking-details">
+                    <h3>Détails de livraison</h3>
+                    <div class="details">
+                        <div>
+                            <p class="detail-titles">Date estimée :</p>
+                            <span id="delivery-date">2024-11-13</span>
+                        </div>
+                        <div>
+                            <p class="detail-titles">Poids :</p>
+                            <span id="delivery-weight">16 kg</span>
+                        </div>
+                        <div>
+                            <p class="detail-titles">Destinataire :</p>
+                            <span id="delivery-receiver">Fréderic Pluquet</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="delivery-status">
+                    <h3>Statut de livraison</h3>
+                    <template class="template-data">      <!--changer ça en template, et prendre les classes pour faire l'auto complétion pour chaque donnée, pareil avec les détails au dessus-->
+                        <div class="design-img">
+                            <img src="./Images/greenball.PNG" class="greenball" alt="" srcset="">
+                            <img src="./Images/blueBall.PNG" class="blueball" alt="" srcset="">
+                            <div class="delivery-data">
+                                <h4 class="current-status">En préparation</h4>
+                                <p class="status-data">13/11/2024 10:23:28</p>
+                                <p class="status-description">Votre colis est en cours de préparation</p>
+                            </div>
+                        </div>
+                    </template>
+                </div>
+            </div>
+            <div class="tracking-footer">
+                <h3>Adresse de livraison</h3>
+                <p id="delivery-address">12 rue de la Paix, 75000 Paris</p>
+            </div>
+        </div>
+    </main>
+
+
+
+    <!--<div id="following-delivery">
+        <a href="./driver-next-delivery.html">Prochaine livraison</a>
+    </div>-->
+    <footer>
+        <p>© 2024 FastDeliver - Tous droits reservés</p>
+    </footer>
+</body>
+

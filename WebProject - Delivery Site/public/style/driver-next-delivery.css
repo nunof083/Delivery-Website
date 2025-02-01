@@ -1,0 +1,161 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F5F5F5;
+    margin: 0;
+    padding: 0;
+
+        .delivery-container
+     {
+            width: 70%;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+
+
+            .nodelivery
+            {
+                width: 70%;
+            }
+                .delivery-header
+                {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            margin-bottom: 20px;
+                 h2
+                 {
+                        font-size: 24px;
+                        font-weight: bold;
+                        margin: 0;
+                }
+            .header-left
+            {
+                display: flex;
+                flex-direction: column;
+            }
+            .delivery-buttons
+            {
+                display: flex;
+                gap: 10px;
+
+                    button
+                    {
+                        border: none;
+                        border-radius: 5px;
+                        padding: 10px 15px;
+                        font-size: 14px;
+                        cursor: pointer;
+                        transition: background-color 0.3s ease ;
+                    }
+                    .problembtn
+                    {
+                    background-color: #f4f6fa;
+                    color: #721c24;
+                    }
+                    .problembtn:hover
+                        {
+                        background-color: #6e6e6e;
+                        }
+                .delivered-buttons
+                {
+                    background-color: #d4edda;
+                    color: #155724;
+
+                }
+                .delivery-buttons:hover {
+                    background-color: #c3e6cb;
+                }
+
+            }
+
+
+        }
+        .delivery-details
+        {
+            padding: 20px;
+            border-top: 1px solid #ddd;
+            background-color: #f9f9fb;
+              h3
+              {
+                    font-size: 20px;
+                    font-weight: bold;
+                  margin-bottom: 10px;
+              }
+            p
+            {
+                margin: 5px 0;
+                line-height: 1.5;
+                strong {
+                    font-weight: lighter;
+                    color:lightseagreen;
+                    font-size: 0.75;
+                }
+            }
+
+            p span
+            {
+             font-weight: normal;
+                color: #333;
+            }
+            .instructions-client {
+
+                    background-color: #fffbea; /* Couleur jaune clair */
+                    border-left: 5px solid #ffd700; /* Bordure gauche jaune doré */
+                    padding: 10px; /* Ajoute un peu d'espace autour du texte */
+                    font-family: Arial, sans-serif; /* Utilisez la police souhaitée */
+                    font-size: 14px; /* Ajustez selon vos besoins */
+                    line-height: 1.5; /* Espacement entre les lignes */
+                    border-radius: 5px; /* Optionnel : ajoute des bords arrondis */
+
+            }
+
+        }
+    }
+    .other-deliveries
+    {
+        padding: 20px;
+        width: 70%;
+        border: #2b2a2a;
+        border-radius: 5px;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        background: #fff;
+        margin: 20px auto;
+
+        h2 {
+            margin: 0;
+        }
+
+        .delivery-list
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            .tracking-number {
+                color: lightseagreen;
+            }
+            p {
+                margin-right: 20px;
+            }
+
+
+        }
+
+    }
+}
+
+.next-deliveries {
+    padding: 10px;
+    background-color: #f9f9fb;
+    display: flex;
+    .data-container {
+        p {
+            margin: 0;
+            font-size: 0.8em;
+        }
+    }
+}

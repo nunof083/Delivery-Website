@@ -1,0 +1,186 @@
+body {
+    background-color: #F5F5F5;
+    main {
+        display: flex;
+        justify-content: center;
+        flex: 1;
+        .tracking-div {
+            margin-top: 30px;
+            /*align-self: center;*/
+            width: 60%;
+            padding: 10px 35px 35px 35px;
+            margin-bottom: 120px;
+            background-color: #FFFFFF;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            .tracking-head {
+                padding-bottom: 30px;
+                border-bottom:  2px solid #F5F5F5 ;
+                .tracking-header-infos {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    h3 {
+                        margin: 0 30px 0 0;
+                    }
+                    p {
+                        margin: 0;
+                    }
+                }
+            }
+            .tracking-body {
+                .tracking-details {
+                    margin-top: 20px;
+                    .details {
+                        display: flex;
+                        justify-content: space-between;
+                        margin-right: 20%;
+                        :first-child {
+                            display: flex;
+                            flex-direction: column;
+                        }
+                        .detail-titles {
+                            margin-bottom: 5px;
+                            color: #868686;
+                            font-size: 0.85rem;
+                            line-height: 1.2;
+                        }
+                        span {
+                            font-size: 1rem;
+                            line-height: 1.5;
+                        }
+                    }
+                }
+                .delivery-status {
+                    margin-top: 60px;
+                    padding: 0 0 0 0;
+                    .template-data {
+                    }
+                }
+            }
+            .tracking-footer {
+                margin-top: 60px;
+                padding: 20px;
+                background-color: #f9f9fb;
+                border-radius: 8px;
+                h3 {
+                    margin: 0;
+                }
+                p {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+.design-img {
+    display: flex;
+    img {
+        margin-right: 15px;
+    }
+    .delivery-data {
+
+        h4 {
+            margin: 0 0 0 0;
+        }
+        p {
+            margin: 3px 0 0 0;
+            font-size: 0.9rem;
+            color: #868686;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    body {
+        main {
+            .tracking-div {
+                /*align-self: center;*/
+                width: 93%;
+                padding: 15px;
+                h2 {
+                    margin-top: 0;
+                }
+                .tracking-head {
+                    padding-bottom: 30px;
+                    border-bottom: 2px solid #F5F5F5;
+                    .tracking-header-infos {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        h3 {
+                            margin: 0 30px 0 0;
+                        }
+                        p {
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 760px) {
+    body {
+        background-color: #F5F5F5;
+
+        main {
+            display: flex;
+            justify-content: center;
+            flex: 1;
+
+            .tracking-div {
+                /*align-self: center;*/
+                width: 93%;
+                padding: 15px;
+                h2 {
+                    margin-top: 0;
+                }
+                .tracking-head {
+                    padding-bottom: 30px;
+                    border-bottom: 2px solid #F5F5F5;
+                    .tracking-header-infos {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        h3 {
+                            margin: 0 30px 0 0;
+                        }
+                        p {
+                            margin: 0;
+                        }
+                    }
+                }
+                .tracking-body {
+                    .tracking-details {
+                        margin-top: 20px;
+
+                        .details {
+                            display: block;
+                            margin-right: 20%;
+
+                            :first-child {
+                                display: flex;
+                                flex-direction: column;
+                            }
+
+                            .detail-titles {
+                                margin-bottom: 5px;
+                                color: #868686;
+                                font-size: 0.85rem;
+                                line-height: 1.2;
+                            }
+
+                            span {
+                                font-size: 1rem;
+                                line-height: 1.5;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

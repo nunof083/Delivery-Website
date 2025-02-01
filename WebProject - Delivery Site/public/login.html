@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion - FastDeliver</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="style/login.css">
+    <link rel="stylesheet" href="./style/footer.css">
+    <link rel="stylesheet" href="style/header.css">
+
+    <script src="scripts/login.js" defer></script>
+    <script src="./scripts/header.js" defer></script>
+<body>
+<header>
+    <nav>
+        <div>
+            <h1><a href="./index.html">FastDeliver</a></h1>
+        </div>
+
+    </nav>
+</header>
+    <main>
+        <div class="connection-div">
+            <h2>Connexion</h2>
+            <form onsubmit="return false">
+                <label for="email">Login</label>
+                <input type="email" name="email" id="email" placeholder="abc@fastdeliver.com" required>
+                <label for="password">Mot de passe</label>
+                <input type="password" name="password" id="password" required>
+                <button type="submit" id="connexion">Se connecter</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 FastDeliver - Tous droits reservés</p>
+    </footer>
+</body>
+</html>

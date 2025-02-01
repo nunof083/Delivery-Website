@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prochaine livraison - FastDeliver</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/header.css">
+    <link rel="stylesheet" href="./style/footer.css">
+    <script src="./scripts/header.js" defer></script>
+    <link rel="stylesheet" href="style/driver-next-delivery.css">
+    <script src="./scripts/next-delivery.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <h1><a href="./index.html">FastDeliver</a></h1>
+                <p class="hidden">Administration</p>
+            </div>
+            <ul>
+                <li id="RoleNameHeader" class="hidden" >Admin: <span class="NameFNameHeader">Nom Prénom</span> </li>
+                <li><a href="./login.html" id="connect" >Connexion</a></li>
+                <li><a href="./login.html" id="disconnect" class="hidden">Déconnexion</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="delivery-container">
+        <img class="nodelivery"  src="./Images/done.jpg" alt="">
+    </main>
+    <div class="other-deliveries" >
+        <h2>Prochaines Livraisons</h2>
+        <div class="delivery-list">
+
+        </div>
+    </div>
+    <template id="driver-nxtdelivery">
+        <div class="delivery-header">
+            <div class="header-left">
+                <h2>Prochaine Livraison</h2>
+                <p class="delivery-number"></p>
+            </div>
+            <div class="delivery-buttons">
+                <button class="problembtn">Problème</button>
+                <button class="deliveredbtn">Marquer comme livré</button>
+            </div>
+        </div>
+        <div class="delivery-details">
+            <h3>Destinataire</h3>
+            <p><strong>Nom : </strong></p>
+            <p class="name-client"></p>
+            <p><strong>Telephone</strong></p>
+            <p class="phone-client"></p>
+            <p><strong>Adresse</strong></p>
+            <p class="address-client"></p>
+            <div class="instructions-container">
+                <p><strong>Instructions</strong></p>
+                <p class="instructions-client"></p>
+            </div>
+        </div>
+    </template>
+    <template id="other-deliveries-template">
+        <div class="next-deliveries">
+            <div class="data-container">
+                <p class="tracking-number"></p>
+                <p class="address-client"></p>
+            </div>
+        </div>
+    </template>
+    <footer>
+        <p>© 2024 FastDeliver - Tous droits reservés</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,27 @@
+{
+  "name": "FastDeliver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "public/scripts/login.js",
+  "type": "module",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "better-sqlite3": "^11.5.0",
+    "bootstrap": "^5.3.3",
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "fs": "^0.0.1-security",
+    "jsonwebtoken": "^9.0.2",
+    "sanitize-html": "^2.14.0",
+    "sha256": "^0.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "init": "node database.js",
+    "start": "nodemon server.js"
+  },
+  "private": true,
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}

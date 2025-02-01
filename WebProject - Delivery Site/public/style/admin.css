@@ -1,0 +1,261 @@
+body {
+    background-color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    header div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /*width: 100%;*/
+
+        p {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #FFFFFF;
+            background-color: #0485e8;
+            padding: 4px 10px 4px 10px;
+            border-radius: 4px;
+            transition: 1s;
+        }
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: row;
+
+        li {
+            color: gray;
+        }
+
+        li {
+            padding-left: 20px;
+            a {
+                background-color: #e94c3c;
+
+                &:hover {
+                    background-color: #d53c2c;
+                }
+            }
+        }
+    }
+
+    main {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        .gestion-div {
+            background-color: #FFFFFF;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 1% 2% 3% 2%;
+            width: 90%;
+            height: 550px;
+            align-self: center;
+
+            .gestion-header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                a {
+                    text-decoration: none;
+                    color: #FFFFFF;
+                    background-color: #0485e8;
+                    padding: 13px 25px 13px 25px;
+                    border-radius: 4px;
+                    transition: 1s;
+
+                    &:hover {
+                        background-color: #0966b2;
+                    }
+                }
+            }
+
+            #search {
+                padding-left: 1%;
+                width: 100%;
+                min-width: 300px;
+                height: 40px;
+                border-radius: 5px;
+                border: 2px solid #F5F5F5;
+                margin-right: 1%;
+                text-align: left;
+                font-size: 1rem;
+            }
+
+            .inputs-container, .status-date-container {
+                display: flex;
+            }
+
+            #reinitialise-button {
+                text-decoration: none;
+                color: #FFFFFF;
+                background-color: #0485e8;
+                min-width: 100px;
+                min-height: 20px;
+                margin-left: 10px;
+                border-radius: 4px;
+                transition: 1s;
+                border: none;
+                cursor: pointer;
+                &:hover {
+                    background-color: #0966b2;
+                }
+            }
+
+            select, #date {
+                padding-left: 1%;
+                width: 160px;
+                height: 40px;
+                border-radius: 5px;
+                border: 2px solid #F5F5F5;
+                margin-right: 1%;
+                text-align: left;
+                font-size: 1rem;
+            }
+
+            table {
+                border-collapse: collapse;
+                border-bottom: 2px solid #f3f5f5;
+                width: 100%;
+            }
+
+            tr:first-child {
+                background-color: #F5F5F5;
+                color: #526068;
+                font-weight: bold;
+            }
+
+            table tr td {
+                border-bottom: 2px solid #f3f5f5;
+                padding: 20px 10px 20px 10px;
+                a {
+                    text-decoration: none;
+                    font-size: 1.3em;
+
+                }
+            }
+
+            .scroll-div {
+                margin-top: 30px;
+                overflow: auto;
+                height: 50%;
+            }
+
+            .statut-nowrap {
+                white-space: nowrap;
+            }
+
+            .emojis-nowrap {
+                white-space: nowrap;
+            }
+
+            .emojis button {
+                border: none;
+                border-radius: 5px;
+                padding: 10px;
+                background-color: white;
+                cursor: pointer;
+                font-size: 1.5em;
+                &:hover {
+                    background-color: #f5f5f5;
+                }
+            }
+        }
+    }
+}
+
+/* Classes utilisées pour attribuer le statut !! */
+
+.preparation .package-status{
+    border-radius: 15px;
+    background-color: #fff3ce;
+    color: #836f39;
+    padding: 5px 15px 5px 15px;
+    display: inline;
+}
+
+.delivery .package-status{
+    border-radius: 15px;
+    background-color: #d5f0f0;
+    color: #54aea0;
+    padding: 5px 15px 5px 15px;
+    display: inline;
+}
+
+.delivered .package-status{
+    border-radius: 15px;
+    background-color: #d3eed8;
+    color: #4d6d55;
+    padding: 5px 15px 5px 15px;
+    display: inline;
+}
+
+.problem .package-status{
+    border-radius: 15px;
+    background-color: #f5dadc;
+    color: #723a40;
+    padding: 5px 15px 5px 15px;
+    display: inline;
+}
+
+.hide {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    body {
+        header {
+            display: flex;
+            justify-content: center;
+            height: 20vh;
+            padding: 0;
+        }
+
+        header div {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            p {
+                margin: 0;
+            }
+        }
+
+        header nav {
+            display: flex;
+            flex-direction: column;
+        }
+        header nav ul {
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            li {
+                margin-bottom: 20px;
+                padding: 5px 0 0 0;
+            }
+        }
+        header nav div {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    body main .gestion-div .gestion-header {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 30px;
+    }
+
+    body {
+        main {
+            .gestion-div {
+                .inputs-container, .status-date-container {
+                    display: block;
+                }
+            }
+        }
+    }
+}

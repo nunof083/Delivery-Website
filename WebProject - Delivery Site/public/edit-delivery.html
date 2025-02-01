@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edition de commande - FastDeliver</title>
+    <script src="./scripts/edit-delivery.js" defer></script>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/header.css">
+    <link rel="stylesheet" href="./style/footer.css">
+    <link rel="stylesheet" href="./style/edit.css">
+    <script src="./scripts/header.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <h1><a href="./index.html">FastDeliver</a></h1>
+                <p class="hidden">Administration</p>
+            </div>
+            <ul>
+                <li id="RoleNameHeader" class="hidden" >Admin: <span class="NameFNameHeader">Nom Prénom</span> </li>
+                <li><a href="./login.html" id="connect" >Connexion</a></li>
+                <li><a href="./login.html" id="disconnect" class="hidden">Déconnexion</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="" method="post">
+        <div class="formhead">
+            <h2 id="packageNumberHead">Edition du colis</h2>
+
+            <a href="./admin.html">Annuler</a>
+
+            <button type="submit">Enregistrer</button>
+        </div>
+            <div class="formMain">
+            <div class="packageInfoCol">
+                <label for="tracking-number">N° de suivi</label>
+                    <input id="tracking-number" type="text" disabled>
+                <label for="date">Date d'expédition</label>
+                    <input id="date" type="date" required>
+                <label for="weight">Poids (kg)</label>
+                    <input type="number" name="weight" id="weight" value="0">
+                <label for="status">Statut</label>
+                <select name="status" id="status">
+                    <option value="preparation">En préparation</option>
+                    <option value="delivery">En livraison</option>
+                    <option value="delivered">Livré</option>
+                    <option value="problem">Problème</option>
+                </select>
+            </div>
+                <div class="clientInfoCol">
+                        <label for="name">Nom</label>
+                            <input id="name" type="text" required>
+                        <label for="email">Email</label>
+                            <input id="email" type="email" required>
+                        <label for="clientPhone">Téléphone</label>
+                            <input id="clientPhone" type="text">
+                        <label for="address">Adresse de livraison</label>
+                            <textarea name="address" id="address" cols="30" rows="5" required></textarea>
+                </div>
+                <div class="DeliveryInfoCol">
+                <label for="driver">Nom du livreur</label>
+                <select name="driver" id="driver">
+                    <option value="non-assigned" selected hidden></option>
+                    <option value="non-assigned">Choisir un livreur</option>
+                    <option value="roux-emma">Roux Emma</option>
+                    <option value="bernard-marc">Bernard Marc</option>
+                    <option value="dubois-lucas">Dubois Lucas</option>
+                </select>
+                <label for="delivery-note">Notes livreur</label>
+                    <textarea name="delivery-note" id="delivery-note" cols="30" rows="5"></textarea>
+                </div>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>© 2024 FastDeliver - Tous droits reservés</p>
+    </footer>
+</body>
+</html>
