@@ -5,6 +5,8 @@ git clone https://github.com/HELHa-Web2-2024-2025/Groupe03.git
 Ensuite, il faut installer les dépendances du projet. 
 npm install là ou le projet est (ou installer directement quand Webstorm le propose)
 
+npm init (start database)
+
 Enfin, pour lancer le projet, il suffit de faire un npm start.
 
 Le projet est maintenant accessible sur http://localhost:3000/
